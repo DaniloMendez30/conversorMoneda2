@@ -20,7 +20,7 @@ Elige una opción:
 opcion = int(input(menu))
 
 if opcion == 1:
-    conversor("mexicanos",21.5)
+    conversor("mex",21.5)
 
 elif opcion == 2:
     conversor("colombianos",3715.01)
