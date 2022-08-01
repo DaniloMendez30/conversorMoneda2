@@ -12,6 +12,7 @@ Bienvenido al conversor de monedas multipais
 1-Pesos Mexicanos
 2-Pesos Colombianos
 3-Pesos Argentinos
+4-Real Brasileño
 
 Elige una opción: 
 
@@ -27,7 +28,10 @@ elif opcion == 2:
 
 elif opcion == 3:
     conversor("argentinos",74.44)
-    
+
+elif opcion == 4:
+    conversor("Brasileño",0.19)
+
 else :
     print('Escribe una opción correcta: ')
     
