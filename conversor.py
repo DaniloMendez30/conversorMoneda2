@@ -25,7 +25,8 @@ if opcion == 1:
 elif opcion == 2:
     conversor("colombianos",3715.01)
 
-
+elif opcion == 3:
+    conversor("argentinos",74.44)
     
 else :
     print('Escribe una opción correcta: ')
