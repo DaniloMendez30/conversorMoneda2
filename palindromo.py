@@ -13,7 +13,7 @@ def run(): #Es buan practica iniciar el codigo con un funcion y asi no va leer l
     if es_palindromo == True:
         print("Es palindromo")
     else: 
-        print("No es palind") 
+        print("No es palindromo") 
     
 if __name__ == "__main__":
     run()
