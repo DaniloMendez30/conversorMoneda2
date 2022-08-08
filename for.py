@@ -19,11 +19,17 @@ def run():
     #        continue
     #    print(contador)
 
-    texto= input('Escribe un texto: ')
-    for letra in texto:
-        if letra == 'o':
-            break
-        print(letra)
+    palabra = input("Escribe una palabra: ")
+    letra = input("Escribe una letra: ")
+    cont = 0
+    
+    for i in palabra:
+        if i == letra:
+            cont += 1
+        else:
+            continue
+    print("la palabra " + palabra + " tiene " + str(cont) + " veces la letra " + letra )
+
 
 if __name__ == '__main__':
     run()
