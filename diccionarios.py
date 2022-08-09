@@ -1,26 +1,34 @@
 def run():
-    mi_diccionario = {
-        'llave1':1,
-        'llave2':2,
-        'llave3':3,
-    }
+    persona = {}
+    continuar = True
+    while continuar:
+        clave = input('¿Qué dato quieres introducir? ')
+        valor = input(clave + ': ')
+        persona[clave] = valor
+        print(persona)
+        continuar = input('¿Quieres añadir más información (Si/No)? ') == "Si"
 
-    print(mi_diccionario['llave1'])
+    #   moneda = {
+    #     'euro':'€', 
+    #     'dollar':'$', 
+    #     'yen':'¥'}
+    #   menu = """
+    #   1-euro
+    #   2-dollar
+    #   3-yen
+    #   Elige una opción: """
 
-    poblacion_pais = {
-        'argentina': 44943321,
-        'Brasil':12123123123123,
-        'Colombia': 3324234
-    }
+    #   moneda_usuario =  input(menu)
+        
+    #   for mon in moneda.keys():
+    #       if mon == moneda_usuario:
+    #           print("el signo de " + mon + " es " + moneda[mon])
+    #           break
+    #       elif mon != moneda_usuario:
+    #           continue   
+    #       else: 
+    #           print("esa moneda no existe")
 
-    for llave in mi_diccionario.keys():
-        print(llave)   #imprime argentina, brasil, colombia
-
-    for valores in mi_diccionario.values():
-        print(valores) #imprime 4444443,121212123243,3324
-    
-    for pais, poblacion in mi_diccionario.items():
-        print("La llave: '" + pais + "' contiene el item: " + str(poblacion)))
 
 if __name__ == '__main__':
     run()
