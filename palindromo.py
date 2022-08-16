@@ -1,4 +1,6 @@
-def palindromo(palabra):
+def palindromo(palabra: str) -> bool:
+    # tenemos la funcion is_pali... que recibe como parametro la variable string que es
+    # de tipo str y retorna un valor de tipo boleano bool.
     palabra = palabra.replace(' ', '')
     palabra = palabra.lower()
     palabra_invertida = palabra[::-1]
