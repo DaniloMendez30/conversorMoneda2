@@ -1,23 +1,34 @@
 
-
-
 def run():
-    lista1 = [23, 45, 67, 20]
-    lista2 = [47, 67, 87, 20]
-    iguales = []
 
-    for i in lista1:
-        for j in lista2:
-            if i == j:
-                iguales.append(i)
-            else: continue
-
-    print("las listas coinciden en: " + str(iguales))
-            
+    #--------------------------------- podemos usar un filter con un list comprenhension
+    lista_nombres = ["danilo","camilo","andres","andrea","carlos"]
    
+    # for i in lista_nombres:
+    #      if i[0] == "a":
+    #         lista_nueva.append(i)
+    #      else:
+    #          continue
+    
+    for i in lista_nombres:
+         lista_nueva = list(filter(lambda i : i[0] == "a", lista_nombres))
+    print("los nombres que comienzan con la letra " + " a " + " son " + str(lista_nueva))
 
+    #------------------------------------------------------------------------------------
+    # lista1 = [23, 45, 67, 20]
+    # lista2 = [47, 67, 87, 20]
+    # iguales = []
 
+    # for i in lista1:
+    #     for j in lista2:
+    #         if i == j:
+    #             iguales.append(i)
+    #         else: continue
 
+    # print("las listas coinciden en: " + str(iguales))
+
+    #-------------------------------------------------------------------------------------
+            
 
     # lista = [5,10,20,30]
     # cont = 0
@@ -31,7 +42,7 @@ def run():
     # print("la suma de la lista es " + str(cont))
     # print("la multipicacion de la lista es " + str(multi))
 
-    
+    #--------------------------------------------------------------------------------------
    
 #    initial = 0
 
